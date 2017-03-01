@@ -3,17 +3,17 @@ export const PAGES_MENU = [
     path: 'pages',
     children: [
       {
-        path: 'dashboard',
+        path: 'home',
         data: {
           menu: {
-            title: 'Dashboard',
+            title: '首页',
             icon: 'ion-android-home',
             selected: false,
             expanded: false,
-            order: 0
+            order: -100
           }
         }
-      },
+      }, 
       {
         path: 'editors',
         data: {
@@ -271,60 +271,20 @@ export const PAGES_MENU = [
         ]
       },
       {
-        path: '',
-        data: {
-          menu: {
-            title: 'Menu Level 1',
-            icon: 'ion-ios-more',
-            selected: false,
-            expanded: false,
-            order: 700,
-          }
-        },
+        path: '', data: { menu: { title: 'Menu Level 1', icon: 'ion-ios-more', selected: false, expanded: false, order: 700, } },
         children: [
+          { path: '', data: { menu: { title: 'Menu Level 1.1', url: '#' } } },
           {
             path: '',
-            data: {
-              menu: {
-                title: 'Menu Level 1.1',
-                url: '#'
-              }
-            }
-          },
-          {
-            path: '',
-            data: {
-              menu: {
-                title: 'Menu Level 1.2',
-                url: '#'
-              }
-            },
+            data: { menu: { title: 'Menu Level 1.2', url: '#' } },
             children: [
-              {
-                path: '',
-                data: {
-                  menu: {
-                    title: 'Menu Level 1.2.1',
-                    url: '#'
-                  }
-                }
-              }
+              { path: '', data: { menu: { title: 'Menu Level 1.2.1', url: '#' } } }
             ]
           }
         ]
       },
-      {
-        path: '',
-        data: {
-          menu: {
-            title: 'External Link',
-            url: 'http://akveo.com',
-            icon: 'ion-android-exit',
-            order: 800,
-            target: '_blank'
-          }
-        }
-      }
+      { path: '', data: { menu: { title: 'External Link', url: 'http://akveo.com', icon: 'ion-android-exit', order: 800, target: '_blank' } } },
+      { path: 'dashboard', data: { menu: { title: 'Dashboard', icon: 'ion-close-round', selected: false, expanded: false, order: 0 } } },
     ]
   }
 ];

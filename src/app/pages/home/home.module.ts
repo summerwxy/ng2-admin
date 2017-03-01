@@ -3,8 +3,8 @@ import { CommonModule }  from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { NgaModule } from '../../theme/nga.module';
 
-import { Dashboard } from './dashboard.component';
-import { routing }       from './dashboard.routing';
+import { Home } from './home.component';
+import { routing }       from './home.routing';
 
 import { PopularApp } from './popularApp';
 import { PieChart } from './pieChart';
@@ -38,7 +38,7 @@ import { UsersMapService } from './usersMap/usersMap.service';
     Feed,
     Todo,
     Calendar,
-    Dashboard
+    Home
     
   ],
   providers: [
@@ -51,4 +51,4 @@ import { UsersMapService } from './usersMap/usersMap.service';
     UsersMapService
   ]
 })
-export class DashboardModule {}
+export class HomeModule {}

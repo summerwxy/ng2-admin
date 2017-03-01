@@ -26,7 +26,11 @@ import {
   BaMultiCheckbox,
   BaPageTop,
   BaPictureUploader,
-  BaSidebar
+  BaSidebar,
+  // add by 0_o
+  WxyPageTop,
+  WxyMsgCenter,
+  WxyContentTop
 } from './components';
 
 import { BaCardBlur } from './components/baCard/baCardBlur.directive';
@@ -69,7 +73,11 @@ const NGA_COMPONENTS = [
   BaMultiCheckbox,
   BaPageTop,
   BaPictureUploader,
-  BaSidebar
+  BaSidebar,
+  // add by 0_o
+  WxyPageTop,
+  WxyMsgCenter,
+  WxyContentTop
 ];
 
 const NGA_DIRECTIVES = [

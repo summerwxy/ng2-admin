@@ -12,3 +12,7 @@ export * from './baFullCalendar';
 export * from './baPictureUploader';
 export * from './baCheckbox';
 export * from './baMultiCheckbox';
+// add by 0_o
+export * from './wxyPageTop';
+export * from './wxyMsgCenter';
+export * from './wxyContentTop';
